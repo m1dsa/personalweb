@@ -13,3 +13,7 @@
 - `resources.html` → `ai-hub.html#resources`
 
 旧站源码保存在 `source-reference/`，未做修改。
+
+## v2 重做版
+
+`v2/` 是从零重做的一版前端（独立的 `index.html` / `style.css` / `app.js`），单页包含：首页、认识我（平台数据）、代表作、AI 小站（教程 / 资源）、日常摄影、联系方式，支持深浅色切换与移动端。内容仍读取根目录的 `content.js`，改资料只需改那一个文件。预览：在仓库根目录运行 `python3 -m http.server`，打开 `http://localhost:8000/v2/`。

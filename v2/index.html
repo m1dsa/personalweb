@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="阿晔 / QURIOUS：AI 实践者、内容创作者。代表作、平台账号、AI 教程与资源。">
+  <meta name="theme-color" content="#f6f5f1">
+  <title>阿晔 / QURIOUS</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      var t = localStorage.getItem("qurious-theme");
+      if (t) document.documentElement.dataset.theme = t;
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="topbar" id="top">
+    <div class="topbar__inner">
+      <a class="brand" href="#top" aria-label="回到顶部">
+        <span class="brand__mark" aria-hidden="true">Q</span>
+        <span class="brand__text">阿晔<em>/</em>QURIOUS</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="主导航"></nav>
+      <div class="topbar__actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换深浅色">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="打开菜单">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <p class="eyebrow reveal"><span class="dot"></span><span id="hero-role-en"></span></p>
+        <h1 class="hero__title reveal" id="hero-title"></h1>
+        <p class="hero__lead reveal" id="hero-lead"></p>
+        <div class="hero__cta reveal">
+          <a class="btn btn--primary" href="#work">看代表作 <span aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost" href="#hub">AI 小站</a>
+        </div>
+        <dl class="hero__stats reveal" id="hero-stats"></dl>
+      </div>
+      <figure class="hero__photo reveal">
+        <img id="hero-photo" alt="" width="443" height="1400" fetchpriority="high">
+        <figcaption>
+          <span class="tag tag--live"><span class="dot"></span>正在创作</span>
+          <span id="hero-caption"></span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee__track" id="marquee"></div></div>
+
+    <section class="section shell" id="about" aria-labelledby="about-title">
+      <header class="section__head">
+        <p class="kicker">01 / 认识我</p>
+        <h2 id="about-title">在这些地方找到我</h2>
+        <p class="section__note" id="stats-note"></p>
+      </header>
+      <div class="socials" id="socials"></div>
+    </section>
+
+    <section class="section shell" id="work" aria-labelledby="work-title">
+      <header class="section__head">
+        <p class="kicker">02 / 代表作</p>
+        <h2 id="work-title">把复杂的 AI 玩法，拆成人人能跟的步骤</h2>
+      </header>
+      <article class="feature" id="feature"></article>
+    </section>
+
+    <section class="section shell" id="hub" aria-labelledby="hub-title">
+      <header class="section__head">
+        <p class="kicker">03 / AI 小站</p>
+        <h2 id="hub-title">教程与工具箱</h2>
+        <div class="tabs" role="tablist" aria-label="AI 小站分类">
+          <button role="tab" id="tab-tutorials" aria-controls="panel-tutorials" aria-selected="true" data-tab="tutorials">教程</button>
+          <button role="tab" id="tab-resources" aria-controls="panel-resources" aria-selected="false" data-tab="resources" tabindex="-1">资源</button>
+        </div>
+      </header>
+      <div class="hub">
+        <ul class="hub__list" role="tabpanel" id="panel-tutorials" aria-labelledby="tab-tutorials"></ul>
+        <ul class="hub__list" role="tabpanel" id="panel-resources" aria-labelledby="tab-resources" hidden></ul>
+      </div>
+    </section>
+
+    <section class="section shell" id="life" aria-labelledby="life-title">
+      <header class="section__head">
+        <p class="kicker">04 / 镜头之外</p>
+        <h2 id="life-title">随手拍下的日常</h2>
+      </header>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <section class="contact shell" id="contact" aria-labelledby="contact-title">
+      <div class="contact__card">
+        <p class="kicker">05 / 交个朋友</p>
+        <h2 id="contact-title">想聊 AI、合作或者只是打个招呼？</h2>
+        <div class="contact__actions" id="contact-actions"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <span id="footer-name"></span>
+    <span id="footer-mottos"></span>
+    <a href="#top">回到顶部 ↑</a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="icon-btn lightbox__close" type="button" aria-label="关闭">×</button>
+    <img alt="">
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="../content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
