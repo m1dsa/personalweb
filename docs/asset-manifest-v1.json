@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "stage": "third_step_asset_split",
+  "reference_lock_version": "v1",
+  "reference_root": "references/locked/v1",
+  "shared_materials": [
+    {
+      "id": "warm-paper-grain",
+      "section": "global",
+      "semantic_role": "paper texture background",
+      "boundary_trigger": "complex paper grain and print noise",
+      "raster_signal": "irregular texture",
+      "fusion_group": "global-paper-field",
+      "placement": "background",
+      "reuse_scope": "global",
+      "provenance": "new image generation after split approval",
+      "reference_box": { "x": 0, "y": 0, "w": 1, "h": 1 },
+      "aspect_ratio": "viewport-fill",
+      "relative_size": "full section",
+      "responsive_mode": "cover with readable code-safe overlay",
+      "status": "generate",
+      "final_path": "assets/generated/warm-paper-grain.png"
+    }
+  ],
+  "sections": [
+    {
+      "id": "hero",
+      "reference": "references/locked/v1/01-hero.png",
+      "topology": "section-specific",
+      "assets": [
+        {
+          "id": "hero-particle-world",
+          "semantic_role": "coral particle field at portrait edge",
+          "boundary_trigger": "irregular texture, edge light, shared particle density",
+          "raster_signal": "complex particle texture",
+          "fusion_group": "hero-right-particle-field",
+          "placement": "composite-foreground",
+          "reuse_scope": "section",
+          "provenance": "new image generation, no semantic text",
+          "reference_box": { "x": 0.68, "y": 0.09, "w": 0.31, "h": 0.88 },
+          "aspect_ratio": "approx 0.35:1 crop-safe field",
+          "relative_size": "right third",
+          "responsive_mode": "hide or reduce on mobile; never cover face",
+          "status": "generate",
+          "final_path": "assets/generated/hero-particle-world.png"
+        },
+        {
+          "id": "hero-person",
+          "semantic_role": "real identity portrait",
+          "boundary_trigger": "authenticity and independent replacement",
+          "raster_signal": "photography",
+          "fusion_group": "hero-person-source",
+          "placement": "independent-media",
+          "reuse_scope": "section",
+          "provenance": "user-provided master plus transparent derived cutout",
+          "reference_box": { "x": 0.51, "y": 0.10, "w": 0.31, "h": 0.90 },
+          "aspect_ratio": "0.91:1 master; transparent cutout is crop-safe",
+          "relative_size": "right center, tall portrait",
+          "responsive_mode": "contain; text first on mobile",
+          "status": "source",
+          "source": "个人网页素材/首页图.jpg",
+          "derived_status": "replace-later",
+          "final_path": "assets/source/profile-home-master.jpg; assets/derived/hero-person-cutout.png"
+        }
+      ]
+    },
+    {
+      "id": "about-social",
+      "reference": "references/locked/v1/02-about-social.png",
+      "topology": "section-specific",
+      "assets": [
+        {
+          "id": "holo-stage",
+          "semantic_role": "deep-blue holographic environment",
+          "boundary_trigger": "3D light, reflection, volume and perspective grid",
+          "raster_signal": "complex 3D rendering",
+          "fusion_group": "holo-floor-and-stage",
+          "placement": "integrated-scene",
+          "reuse_scope": "section",
+          "provenance": "new image generation, no metrics or labels",
+          "reference_box": { "x": 0, "y": 0, "w": 0.54, "h": 1 },
+          "aspect_ratio": "approx 0.54:1 scene",
+          "relative_size": "left half",
+          "responsive_mode": "crop/reduce grid on mobile",
+          "status": "generate",
+          "final_path": "assets/generated/holo-stage.png"
+        },
+        {
+          "id": "about-avatar",
+          "semantic_role": "stylized identity character",
+          "boundary_trigger": "identity and independent replacement",
+          "raster_signal": "3D/cartoon rendering",
+          "fusion_group": "avatar-body",
+          "placement": "independent-media",
+          "reuse_scope": "section",
+          "provenance": "new stylized generation based on user portrait and approved David proportion reference",
+          "reference_box": { "x": 0.16, "y": 0.11, "w": 0.22, "h": 0.76 },
+          "aspect_ratio": "full-body transparent or clean-background character",
+          "relative_size": "left-center",
+          "responsive_mode": "scale and center above data on mobile",
+          "status": "generate",
+          "final_path": "assets/generated/about-avatar.png"
+        },
+        {
+          "id": "about-avatar-3d",
+          "semantic_role": "optional rotatable 3D model",
+          "boundary_trigger": "independent WebGL asset and interaction",
+          "raster_signal": "3D model/rig",
+          "fusion_group": "none",
+          "placement": "independent-media",
+          "reuse_scope": "section",
+          "provenance": "no verified GLB/GLTF/rigged source available",
+          "reference_box": { "x": 0.16, "y": 0.11, "w": 0.22, "h": 0.76 },
+          "aspect_ratio": "model-dependent",
+          "relative_size": "left-center",
+          "responsive_mode": "pending interaction decision",
+          "status": "blocked",
+          "final_path": null
+        }
+      ]
+    },
+    {
+      "id": "featured-work",
+      "reference": "references/locked/v1/03-featured-ai-hub.png",
+      "topology": "section-specific",
+      "assets": [
+        {
+          "id": "x-work-cover",
+          "semantic_role": "real representative work evidence",
+          "boundary_trigger": "authenticity, replacement and independent click target",
+          "raster_signal": "dense real media cover",
+          "fusion_group": "none",
+          "placement": "independent-media",
+          "reuse_scope": "section",
+          "provenance": "downloaded original X cover",
+          "reference_box": { "x": 0.39, "y": 0.25, "w": 0.57, "h": 0.43 },
+          "aspect_ratio": "2.5:1",
+          "relative_size": "right evidence panel",
+          "responsive_mode": "contain; full cover before text on mobile",
+          "status": "source",
+          "source": "reference-inputs/x-work-cover.jpg",
+          "final_path": "assets/source/x-work-cover.jpg"
+        }
+      ]
+    },
+    {
+      "id": "outside-work",
+      "reference": "references/locked/v1/04-outside-work.png",
+      "topology": "section-specific",
+      "assets": [
+        {
+          "id": "photo-flowers",
+          "semantic_role": "main flower photograph",
+          "boundary_trigger": "independent source and responsive crop",
+          "raster_signal": "photography",
+          "fusion_group": "none",
+          "placement": "independent-media",
+          "reuse_scope": "section",
+          "provenance": "user-provided original",
+          "reference_box": { "x": 0.05, "y": 0.30, "w": 0.56, "h": 0.64 },
+          "aspect_ratio": "1.5:1 master",
+          "relative_size": "large left image",
+          "responsive_mode": "full subject-safe crop",
+          "status": "source",
+          "source": "个人网页素材/摄影作品/1000114630 (2).jpg",
+          "final_path": "assets/source/photo-flowers-master.jpg"
+        },
+        {
+          "id": "photo-autumn",
+          "semantic_role": "autumn leaves photograph",
+          "boundary_trigger": "independent source and responsive crop",
+          "raster_signal": "photography",
+          "fusion_group": "none",
+          "placement": "independent-media",
+          "reuse_scope": "section",
+          "provenance": "user-provided original",
+          "reference_box": { "x": 0.64, "y": 0.15, "w": 0.32, "h": 0.35 },
+          "aspect_ratio": "1.5:1 master",
+          "relative_size": "small upper-right image",
+          "responsive_mode": "subject-safe crop",
+          "status": "source",
+          "source": "个人网页素材/摄影作品/02.png",
+          "final_path": "assets/source/photo-autumn-master.png"
+        },
+        {
+          "id": "photo-steps",
+          "semantic_role": "steps and heart photograph",
+          "boundary_trigger": "independent source and responsive crop",
+          "raster_signal": "photography",
+          "fusion_group": "none",
+          "placement": "independent-media",
+          "reuse_scope": "section",
+          "provenance": "user-provided original",
+          "reference_box": { "x": 0.64, "y": 0.54, "w": 0.32, "h": 0.39 },
+          "aspect_ratio": "1.5:1 master",
+          "relative_size": "small lower-right image",
+          "responsive_mode": "subject-safe crop",
+          "status": "source",
+          "source": "个人网页素材/摄影作品/1000114649 (2).jpg",
+          "final_path": "assets/source/photo-steps-master.jpg"
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "reference": "references/locked/v1/05-coffee-chat.png",
+      "topology": "section-specific",
+      "assets": []
+    },
+    {
+      "id": "ai-hub",
+      "reference": "references/locked/v1/06-ai-hub.png",
+      "topology": "section-specific",
+      "assets": [
+        {
+          "id": "ai-hub-paper-accent",
+          "semantic_role": "torn-paper and halftone accent",
+          "boundary_trigger": "irregular edge, print wear and material texture",
+          "raster_signal": "paper/print texture",
+          "fusion_group": "ai-hub-accent",
+          "placement": "composite-foreground",
+          "reuse_scope": "section",
+          "provenance": "new image generation, abstract only",
+          "reference_box": { "x": 0, "y": 0.02, "w": 0.56, "h": 0.98 },
+          "aspect_ratio": "left-side transparent/clean accent",
+          "relative_size": "left lower edge and center halftone",
+          "responsive_mode": "reduce or reposition below content on mobile",
+          "status": "generate",
+          "final_path": "assets/generated/ai-hub-paper-accent.png"
+        }
+      ]
+    }
+  ],
+  "code_native_global": [
+    "live text",
+    "navigation",
+    "links",
+    "buttons",
+    "verified metrics",
+    "contact details",
+    "pricing",
+    "Feishu URLs",
+    "borders",
+    "simple gradients",
+    "rings",
+    "dots",
+    "arrows",
+    "grid lines",
+    "responsive layout"
+  ],
+  "notes": [
+    "Reference images are QA targets, never final webpage backgrounds.",
+    "Do not generate a fake QR code, logo, social metric, or 3D model.",
+    "Original photography masters remain canonical; existing assets/photo-*.jpg files are derivatives.",
+    "Any source change that changes subject, crop, aspect ratio, visual weight or responsive behavior invalidates the reference and requires a new reference version."
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "reference_lock_version": "v2",
+  "source_strategy_locked": true,
+  "review_scope": "all_sections",
+  "viewports": {
+    "desktop": { "width": 1672, "height": 941 },
+    "ultrawide": { "width": 2200, "height": 1200 },
+    "mobile": { "width": 390, "height": 844 }
+  },
+  "fidelity_ledger": "docs/fidelity-ledger.md",
+  "fresh_review": "docs/fresh-review.md",
+  "asset_review": "docs/asset-review-v2.md",
+  "asset_manifest": "docs/asset-manifest-v2.json",
+  "fresh_review_mode": "self-blind",
+  "final_status": "pass",
+  "note": "首屏恢复锁定的纸感真人粒子构图；第二屏使用原创角色与代码空间转入、扫描渐显和轻微指针跟随，不复制 David 的源码、模型或材质。",
+  "sections": [
+    {
+      "id": "hero",
+      "reference": {
+        "path": "references/locked/v2/01-hero.png",
+        "sha256": "879ecf0b6bcc281e9aef1851c67c759ac28f65be9c07163edd2d8e83153594c2"
+      },
+      "render_contract": "docs/restoration-plan.md",
+      "topology": {
+        "kind": "section-specific",
+        "shared_with": [],
+        "reason": "人物、粒子、标题和分栏线使用首屏独立坐标系"
+      },
+      "captures": {
+        "desktop": "qa/desktop/01-hero-v4.png",
+        "ultrawide": "qa/ultrawide/01-hero-v4.png",
+        "mobile": "qa/mobile/01-hero-v4.png"
+      },
+      "gates": {
+        "visual_meaning": "pass",
+        "hierarchy": "pass",
+        "personal_evidence": "pass",
+        "composition": "pass",
+        "typography": "pass",
+        "asset_crop": "pass",
+        "overlap": "pass",
+        "responsive": "pass",
+        "reference_fidelity": "pass"
+      },
+      "status": "pass"
+    },
+    {
+      "id": "about-social",
+      "reference": {
+        "path": "references/locked/v2/02-about-social.png",
+        "sha256": "cd427983f9e9b287a8ba4ac5328cd0ab1c407328609d8d6c8300fa26c4895b99"
+      },
+      "render_contract": "docs/restoration-plan.md",
+      "topology": {
+        "kind": "section-specific",
+        "shared_with": [],
+        "reason": "全息舞台、人物转场和五行信号台使用第二屏独立坐标系"
+      },
+      "captures": {
+        "desktop": "qa/desktop/02-about-v4.png",
+        "ultrawide": "qa/ultrawide/02-about-v4.png",
+        "mobile": "qa/mobile/02-about-v4.png"
+      },
+      "gates": {
+        "visual_meaning": "pass",
+        "hierarchy": "pass",
+        "personal_evidence": "pass",
+        "composition": "pass",
+        "typography": "pass",
+        "asset_crop": "pass",
+        "overlap": "pass",
+        "responsive": "pass",
+        "reference_fidelity": "pass"
+      },
+      "status": "pass"
+    },
+    {
+      "id": "featured-work",
+      "reference": {
+        "path": "references/locked/v2/03-featured-ai-hub.png",
+        "sha256": "bca54b5265fd6d42e9db63c1e99858c67a6e2e88acc0d1e66f650b503ce7be69"
+      },
+      "render_contract": "docs/restoration-plan.md",
+      "topology": {
+        "kind": "section-specific",
+        "shared_with": [],
+        "reason": "AI 小站索引与代表作证据形成独立双栏结构"
+      },
+      "captures": {
+        "desktop": "qa/section-work-v2.png",
+        "ultrawide": "qa/work-ultrawide-qa.png",
+        "mobile": "qa/work-mobile-final2.png"
+      },
+      "gates": {
+        "visual_meaning": "pass",
+        "hierarchy": "pass",
+        "personal_evidence": "pass",
+        "composition": "pass",
+        "typography": "pass",
+        "asset_crop": "pass",
+        "overlap": "pass",
+        "responsive": "pass",
+        "reference_fidelity": "pass"
+      },
+      "status": "pass"
+    },
+    {
+      "id": "outside-work",
+      "reference": {
+        "path": "references/locked/v2/04-outside-work.png",
+        "sha256": "b9412d2dfae2827776c2a092bc0fd4463a18266b071a82e910a3375f4514cc67"
+      },
+      "render_contract": "docs/restoration-plan.md",
+      "topology": {
+        "kind": "section-specific",
+        "shared_with": [],
+        "reason": "三张摄影图使用独立主副图拓扑"
+      },
+      "captures": {
+        "desktop": "qa/section-life-v2.png",
+        "ultrawide": "qa/life-ultrawide-qa.png",
+        "mobile": "qa/life-mobile-qa.png"
+      },
+      "gates": {
+        "visual_meaning": "pass",
+        "hierarchy": "pass",
+        "personal_evidence": "pass",
+        "composition": "pass",
+        "typography": "pass",
+        "asset_crop": "pass",
+        "overlap": "pass",
+        "responsive": "pass",
+        "reference_fidelity": "pass"
+      },
+      "status": "pass"
+    },
+    {
+      "id": "contact",
+      "reference": {
+        "path": "references/locked/v2/05-coffee-chat.png",
+        "sha256": "26c32921411a7bccc6570c3c9c19ceec3e6255961100756b8b4facb79f47099e"
+      },
+      "render_contract": "docs/restoration-plan.md",
+      "topology": {
+        "kind": "section-specific",
+        "shared_with": [],
+        "reason": "Coffee Chat 展开区和 AI 群信息使用独立交互结构"
+      },
+      "captures": {
+        "desktop": "qa/contact-open-final2.png",
+        "ultrawide": "qa/contact-ultrawide-qa.png",
+        "mobile": "qa/contact-mobile-final2.png"
+      },
+      "gates": {
+        "visual_meaning": "pass",
+        "hierarchy": "pass",
+        "personal_evidence": "pass",
+        "composition": "pass",
+        "typography": "pass",
+        "asset_crop": "pass",
+        "overlap": "pass",
+        "responsive": "pass",
+        "reference_fidelity": "pass"
+      },
+      "status": "pass"
+    },
+    {
+      "id": "ai-hub",
+      "reference": {
+        "path": "references/locked/v2/06-ai-hub.png",
+        "sha256": "f6f1e0d2c15f776e36ce66c43f55bf379f6121e6f3635c1ffd5ad9b301e108ce"
+      },
+      "render_contract": "docs/restoration-plan.md",
+      "topology": {
+        "kind": "section-specific",
+        "shared_with": [],
+        "reason": "教程区与资源区使用独立页面和双面板结构"
+      },
+      "captures": {
+        "desktop": "qa/ai-hub-desktop-qa.png",
+        "ultrawide": "qa/ai-hub-ultrawide-qa.png",
+        "mobile": "qa/ai-hub-mobile-qa.png"
+      },
+      "gates": {
+        "visual_meaning": "pass",
+        "hierarchy": "pass",
+        "personal_evidence": "pass",
+        "composition": "pass",
+        "typography": "pass",
+        "asset_crop": "pass",
+        "overlap": "pass",
+        "responsive": "pass",
+        "reference_fidelity": "pass"
+      },
+      "status": "pass"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+@media (max-width: 760px) {
+  .page-hero h1 {
+    font-size: 44px;
+    line-height: 1;
+    word-break: break-word;
+  }
+
+  .work-item > div,
+  .list-row > div {
+    min-width: 0;
+  }
+
+  .list-row h2 {
+    max-width: 100%;
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.25;
+    letter-spacing: -0.06em;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+  }
+
+  .page-hero > p {
+    width: 100%;
+    max-width: 100%;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+  }
+}
+
+.hero-copy,
+.page-hero,
+.list-row > div {
+  min-width: 0;
+}
+
+body {
+  overflow-x: clip;
+}
+
+.profile-photo {
+  position: relative;
+  flex: 1;
+  min-height: 420px;
+  margin: 24px 0;
+  overflow: hidden;
+  background: #e9dcc9;
+}
+
+.profile-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.profile-photo figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 54px 14px 12px;
+  color: #fff;
+  font-size: 11px;
+  line-height: 1.45;
+  background: linear-gradient(transparent, rgba(0, 0, 0, .72));
+}
+
+.page-grid.route-only,
+.account-section.account-only {
+  display: block;
+}
+
+.account-only .account-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.life-gallery {
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  grid-template-rows: 320px 320px;
+  gap: 12px;
+}
+
+.photo-card {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.photo-card.featured {
+  grid-row: span 2;
+}
+
+.photo-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease;
+}
+
+.photo-card:hover img {
+  transform: scale(1.025);
+}
+
+.photo-card figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 50px 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 44px 20px 18px;
+  color: #fff;
+  background: linear-gradient(transparent, rgba(0, 0, 0, .76));
+}
+
+.photo-card figcaption span,
+.collection-heading > span {
+  font-size: 11px;
+  letter-spacing: .16em;
+}
+
+.photo-card figcaption strong {
+  font-family: var(--serif);
+  font-size: 21px;
+}
+
+.photo-card figcaption small {
+  font-size: 11px;
+}
+
+.ai-hub-hero {
+  background: linear-gradient(120deg, rgba(39, 94, 103, .22), rgba(246, 242, 234, .34) 58%, rgba(217, 104, 69, .18));
+}
+
+.collection-heading {
+  display: grid;
+  grid-template-columns: 150px 1fr 1fr;
+  gap: 24px;
+  align-items: end;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.collection-heading h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(42px, 5vw, 70px);
+  line-height: 1;
+  letter-spacing: -.06em;
+}
+
+.collection-heading p {
+  max-width: 420px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.hub-section + .hub-section {
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 760px) {
+  .hero-intro,
+  .page-hero > p {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .profile-index {
+    min-height: auto;
+  }
+
+  .profile-photo {
+    flex: none;
+    min-height: 420px;
+    aspect-ratio: 4 / 5;
+  }
+
+  .account-only .account-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .life-gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .photo-card,
+  .photo-card.featured {
+    grid-row: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .photo-card figcaption {
+    grid-template-columns: 36px 1fr;
+  }
+
+  .photo-card figcaption small {
+    display: none;
+  }
+
+  .collection-heading {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .collection-heading h2 {
+    font-size: 44px;
+  }
+}

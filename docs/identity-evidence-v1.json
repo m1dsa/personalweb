@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "reference_lock_version": "v1",
+  "source_strategy_locked": true,
+  "review_scope": "all_sections",
+  "viewports": {
+    "desktop": { "width": 1672, "height": 941 },
+    "ultrawide": { "width": 2200, "height": 1200 },
+    "mobile": { "width": 390, "height": 844 }
+  },
+  "fidelity_ledger": "docs/fidelity-ledger.md",
+  "fresh_review": "docs/fresh-review.md",
+  "fresh_review_mode": "not_started",
+  "final_status": "not_verified",
+  "note": "参考图组已由用户确认并锁定；素材拆分清单等待用户确认，页面代码尚未开始。",
+  "sections": [
+    {
+      "id": "hero",
+      "reference": { "path": "references/locked/v1/01-hero.png", "sha256": "879ECF0B6BCC281E9AEF1851C67C759AC28F65BE9C07163EDD2D8E83153594C2" },
+      "render_contract": "docs/restoration-plan.md",
+      "topology": { "kind": "section-specific", "shared_with": [], "reason": "人物、粒子和标题使用独立坐标系" },
+      "captures": { "desktop": null, "ultrawide": null, "mobile": null },
+      "gates": { "visual_meaning": "not_verified", "hierarchy": "not_verified", "personal_evidence": "not_verified", "composition": "not_verified", "typography": "not_verified", "asset_crop": "not_verified", "overlap": "not_verified", "responsive": "not_verified", "reference_fidelity": "not_verified" },
+      "status": "not_verified"
+    },
+    {
+      "id": "about-social",
+      "reference": { "path": "references/locked/v1/02-about-social.png", "sha256": "E900B80672DE7DA76FF2B91DDA736585A8FF6306F2460DB1C91BD8C99EFE3DA0" },
+      "render_contract": "docs/restoration-plan.md",
+      "topology": { "kind": "section-specific", "shared_with": [], "reason": "全息舞台与数据区使用独立坐标系" },
+      "captures": { "desktop": null, "ultrawide": null, "mobile": null },
+      "gates": { "visual_meaning": "not_verified", "hierarchy": "not_verified", "personal_evidence": "not_verified", "composition": "not_verified", "typography": "not_verified", "asset_crop": "not_verified", "overlap": "not_verified", "responsive": "not_verified", "reference_fidelity": "not_verified" },
+      "status": "not_verified"
+    },
+    {
+      "id": "featured-work",
+      "reference": { "path": "references/locked/v1/03-featured-ai-hub.png", "sha256": "BCA54B5265FD6D42E9DB63C1E99858C67A6E2E88ACC0D1E66F650B503CE7BE69" },
+      "render_contract": "docs/restoration-plan.md",
+      "topology": { "kind": "section-specific", "shared_with": [], "reason": "AI 小站入口与代表作证据为两个独立焦点" },
+      "captures": { "desktop": null, "ultrawide": null, "mobile": null },
+      "gates": { "visual_meaning": "not_verified", "hierarchy": "not_verified", "personal_evidence": "not_verified", "composition": "not_verified", "typography": "not_verified", "asset_crop": "not_verified", "overlap": "not_verified", "responsive": "not_verified", "reference_fidelity": "not_verified" },
+      "status": "not_verified"
+    },
+    {
+      "id": "outside-work",
+      "reference": { "path": "references/locked/v1/04-outside-work.png", "sha256": "B9412D2DFAE2827776C2A092BC0FD4463A18266B071A82E910A3375F4514CC67" },
+      "render_contract": "docs/restoration-plan.md",
+      "topology": { "kind": "section-specific", "shared_with": [], "reason": "三张摄影各自独立，使用非对称画廊坐标系" },
+      "captures": { "desktop": null, "ultrawide": null, "mobile": null },
+      "gates": { "visual_meaning": "not_verified", "hierarchy": "not_verified", "personal_evidence": "not_verified", "composition": "not_verified", "typography": "not_verified", "asset_crop": "not_verified", "overlap": "not_verified", "responsive": "not_verified", "reference_fidelity": "not_verified" },
+      "status": "not_verified"
+    },
+    {
+      "id": "contact",
+      "reference": { "path": "references/locked/v1/05-coffee-chat.png", "sha256": "26C32921411A7BCCC6570C3C9C19CEEC3E6255961100756B8B4FACB79F47099E" },
+      "render_contract": "docs/restoration-plan.md",
+      "topology": { "kind": "section-specific", "shared_with": [], "reason": "联系与入群行动区使用独立坐标系" },
+      "captures": { "desktop": null, "ultrawide": null, "mobile": null },
+      "gates": { "visual_meaning": "not_verified", "hierarchy": "not_verified", "personal_evidence": "not_verified", "composition": "not_verified", "typography": "not_verified", "asset_crop": "not_verified", "overlap": "not_verified", "responsive": "not_verified", "reference_fidelity": "not_verified" },
+      "status": "not_verified"
+    },
+    {
+      "id": "ai-hub",
+      "reference": { "path": "references/locked/v1/06-ai-hub.png", "sha256": "F6F1E0D2C15F776E36CE66C43F55BF379F6121E6F3635C1FFD5AD9B301E108CE" },
+      "render_contract": "docs/restoration-plan.md",
+      "topology": { "kind": "section-specific", "shared_with": [], "reason": "教程区与资源区共享 token 但有独立内部定位" },
+      "captures": { "desktop": null, "ultrawide": null, "mobile": null },
+      "gates": { "visual_meaning": "not_verified", "hierarchy": "not_verified", "personal_evidence": "not_verified", "composition": "not_verified", "typography": "not_verified", "asset_crop": "not_verified", "overlap": "not_verified", "responsive": "not_verified", "reference_fidelity": "not_verified" },
+      "status": "not_verified"
+    }
+  ]
+}
