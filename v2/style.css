@@ -109,12 +109,15 @@ em { font-style: normal; }
   transition: transform 0.5s var(--ease), background-color 0.4s, border-color 0.4s;
   border-bottom: 1px solid transparent;
 }
-.topbar.is-scrolled {
+.topbar::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; opacity: 0; pointer-events: none;
   background: color-mix(in srgb, var(--bg) 72%, transparent);
   -webkit-backdrop-filter: blur(18px) saturate(1.4);
   backdrop-filter: blur(18px) saturate(1.4);
-  border-bottom-color: var(--line);
+  transition: opacity 0.4s;
 }
+.topbar.is-scrolled::before { opacity: 1; }
+.topbar.is-scrolled { border-bottom-color: var(--line); }
 .topbar.is-hidden { transform: translateY(-100%); }
 .topbar__inner { width: var(--shell); margin-inline: auto; height: 72px; display: flex; align-items: center; gap: 32px; }
 .brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 600; letter-spacing: 0.02em; }
