@@ -170,13 +170,15 @@ em { font-style: normal; }
 .hero__meta { display: flex; justify-content: space-between; gap: 24px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
 .hero__stage { position: relative; flex: 1; min-height: clamp(420px, 60vh, 700px); }
 .hero__title { position: absolute; inset: 0; margin: 0; font-weight: 400; pointer-events: none; }
-.hero__title .line { position: absolute; display: block; overflow: hidden; padding: 0.04em 0.06em 0.34em; }
+.hero__title .line { position: absolute; display: block; overflow: hidden; padding: 0.04em 0.06em 0.22em; }
 .hero__title .line:first-child { left: -0.04em; top: 4%; z-index: 0; }
 .hero__title .line:last-child { right: -0.04em; bottom: 0; z-index: 3; }
-.hero__cn { display: block; font-size: clamp(96px, 15vw, 232px); font-weight: 600; line-height: 1; letter-spacing: -0.02em; }
+.hero__title .line:first-child { font-size: clamp(96px, 15vw, 232px); }
+.hero__title .line:last-child { font-size: clamp(104px, 17.5vw, 280px); }
+.hero__cn { display: block; font-size: 1em; font-weight: 600; line-height: 1; letter-spacing: -0.02em; }
 .hero__en {
   display: block; font-family: var(--serif); font-style: italic; font-weight: 400;
-  font-size: clamp(104px, 17.5vw, 280px); line-height: 0.9; letter-spacing: -0.035em;
+  font-size: 1em; line-height: 0.9; letter-spacing: -0.035em;
   color: var(--ink);
 }
 .hero__en::first-letter { color: var(--accent); }
@@ -420,8 +422,8 @@ a.hub__item:hover .hub__go i { background: var(--accent); border-color: var(--ac
   .hero__title { position: relative; inset: auto; display: flex; flex-direction: column; padding-top: 18px; }
   .hero__title .line { position: relative; inset: auto !important; }
   .hero__title .line:last-child { align-self: flex-end; margin-top: -0.3em; }
-  .hero__cn { font-size: clamp(76px, 24vw, 140px); }
-  .hero__en { font-size: clamp(84px, 27vw, 170px); }
+  .hero__title .line:first-child { font-size: clamp(76px, 24vw, 140px); }
+  .hero__title .line:last-child { font-size: clamp(84px, 27vw, 170px); }
   .hero__portrait { position: relative; left: auto; transform: none; margin: -0.5em auto 0; width: min(62vw, 300px); height: min(88vw, 420px); z-index: 2; order: 2; }
   .hero__title .line:last-child { z-index: 3; }
   .hero__foot { grid-template-columns: 1fr; gap: 24px; }
